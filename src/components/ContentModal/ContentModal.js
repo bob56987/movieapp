@@ -69,7 +69,7 @@ export default function ContentModal({ children, media_type, id }) {
   }, []);
   return (
     <>
-      <div div className="media" onClick={handleOpen}>
+      <div className="media" onClick={handleOpen}>
         {children}
       </div>
       <Modal
@@ -108,7 +108,7 @@ export default function ContentModal({ children, media_type, id }) {
                 />
                 <div className="ContentModal__about">
                   <span className="ContentModal__title">
-                    {content.title} (
+                    <span className="title">{content.title}</span> (
                     {(
                       content.first_air_date ||
                       content.release_date ||
@@ -122,7 +122,7 @@ export default function ContentModal({ children, media_type, id }) {
                   <span className="ContentModal__description">
                     {content.overview}
                   </span>
-                  <h1>演員</h1>
+                  <h3>演員</h3>
                   <div>
                     <Carousel id={id} media_type={media_type} />
                   </div>
