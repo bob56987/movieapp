@@ -122,6 +122,7 @@ export default function ContentModal({ children, media_type, id }) {
                   <span className="ContentModal__description">
                     {content.overview}
                   </span>
+                  <h1>演員</h1>
                   <div>
                     <Carousel id={id} media_type={media_type} />
                   </div>

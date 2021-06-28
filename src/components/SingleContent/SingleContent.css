@@ -11,8 +11,8 @@
 }
 
 .media:hover {
-  background-color: black;
-  color: aliceblue;
+  background-color: #666b75;
+  color: white;
 }
 
 @media (max-width: 550px) {
